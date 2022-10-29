@@ -142,7 +142,7 @@ Text("Type")
 
                             }
   }
-                          .padding(.top , -50)
+                          .padding(.top , -49)
 
 
 
