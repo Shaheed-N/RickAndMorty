@@ -78,7 +78,7 @@ Text("Type")
 
      }
 
-                                VStack(spacing:20) {
+                                VStack(spacing:22) {
 
                           Text("\(new.name)")
 

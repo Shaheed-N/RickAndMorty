@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		F796FD14290DD2DC0002B6A0 /* ApplicationRickAndMortyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796FD13290DD2DC0002B6A0 /* ApplicationRickAndMortyApp.swift */; };
-		F796FD16290DD2DC0002B6A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796FD15290DD2DC0002B6A0 /* ContentView.swift */; };
 		F796FD18290DD2DE0002B6A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F796FD17290DD2DE0002B6A0 /* Assets.xcassets */; };
 		F796FD1B290DD2DE0002B6A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F796FD1A290DD2DE0002B6A0 /* Preview Assets.xcassets */; };
+		F796FD24290DD2E80002B6A0 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796FD22290DD2E80002B6A0 /* CharacterModel.swift */; };
+		F796FD29290DD2EC0002B6A0 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796FD27290DD2EC0002B6A0 /* ImageView.swift */; };
+		F796FD2A290DD2EC0002B6A0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796FD28290DD2EC0002B6A0 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F796FD10290DD2DC0002B6A0 /* ApplicationRickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplicationRickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F796FD13290DD2DC0002B6A0 /* ApplicationRickAndMortyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRickAndMortyApp.swift; sourceTree = "<group>"; };
-		F796FD15290DD2DC0002B6A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F796FD17290DD2DE0002B6A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F796FD1A290DD2DE0002B6A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F796FD22290DD2E80002B6A0 /* CharacterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		F796FD27290DD2EC0002B6A0 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		F796FD28290DD2EC0002B6A0 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		F796FD12290DD2DC0002B6A0 /* ApplicationRickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				F796FD26290DD2EC0002B6A0 /* Views */,
+				F796FD21290DD2E80002B6A0 /* Model */,
 				F796FD13290DD2DC0002B6A0 /* ApplicationRickAndMortyApp.swift */,
-				F796FD15290DD2DC0002B6A0 /* ContentView.swift */,
 				F796FD17290DD2DE0002B6A0 /* Assets.xcassets */,
 				F796FD19290DD2DE0002B6A0 /* Preview Content */,
 			);
@@ -65,6 +70,23 @@
 				F796FD1A290DD2DE0002B6A0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F796FD21290DD2E80002B6A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F796FD22290DD2E80002B6A0 /* CharacterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F796FD26290DD2EC0002B6A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F796FD27290DD2EC0002B6A0 /* ImageView.swift */,
+				F796FD28290DD2EC0002B6A0 /* MainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F796FD16290DD2DC0002B6A0 /* ContentView.swift in Sources */,
+				F796FD29290DD2EC0002B6A0 /* ImageView.swift in Sources */,
+				F796FD2A290DD2EC0002B6A0 /* MainView.swift in Sources */,
+				F796FD24290DD2E80002B6A0 /* CharacterModel.swift in Sources */,
 				F796FD14290DD2DC0002B6A0 /* ApplicationRickAndMortyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +299,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +329,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
